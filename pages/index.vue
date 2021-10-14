@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Auditere></Auditere>
+    <Auditere class="my-6"></Auditere>
+    <Quotidie class="my-6"></Quotidie>
   </div>
 </template>
 
