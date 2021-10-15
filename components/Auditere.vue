@@ -11,9 +11,17 @@
           </div>
         </v-col>
         <v-col cols="auto">
-          <v-img width="70" src="icon_auditere.png"></v-img>
+          <v-avatar size="70">
+            <v-img src="icon_auditere.png"></v-img
+          ></v-avatar>
         </v-col>
       </v-row>
+
+      <div class="text-body-1 mt-12 text-justify">
+        Permet de rechercher et lire de la musique sur Youtube tout en
+        vérouillant le téléphone. Peut aussi enregistrer et lire des playlists
+        crées sur Youtube.
+      </div>
 
       <div class="text-md-left text-center">
         <v-btn
@@ -24,12 +32,6 @@
         >
           Essayer Auditere
         </v-btn>
-      </div>
-
-      <div class="text-body-1 mt-12 text-justify">
-        Permet de rechercher et lire de la musique sur Youtube tout en
-        vérouillant le téléphone. Peut aussi enregistrer et lire des playlists
-        crées sur Youtube.
       </div>
     </v-col>
   </v-row>

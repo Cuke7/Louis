@@ -2,6 +2,7 @@
   <div>
     <Auditere class="my-6"></Auditere>
     <Quotidie class="my-6"></Quotidie>
+    <Sevenwonders class="my-6"></Sevenwonders>
   </div>
 </template>
 
