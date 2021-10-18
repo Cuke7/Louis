@@ -1,16 +1,9 @@
 <template>
-  <v-row align="center" class="pa-4">
-    <v-col
-      order="2"
-      order-md="2"
-      cols="12"
-      md="6"
-      class="text-center"
-      align-self="start"
-    >
+  <v-row align="center" class="pa-4" justify="center">
+    <v-col order="2" order-md="2" cols="12" md="6" class="text-center">
       <v-img contain max-height="500" src="quotidie_mockup.png"></v-img>
     </v-col>
-    <v-col order="1" order-md="1" cols="12" md="6" align-self="start">
+    <v-col order="1" order-md="1" cols="12" md="4" align-self="start">
       <v-row align="center">
         <v-col cols="auto">
           <div class="text-h2">
@@ -33,7 +26,7 @@
         <v-btn
           color="#0083E5"
           class="mt-12"
-          href="https://quotidie.fr"
+          :href="projectData.url"
           target="_blank"
         >
           Essayer Quotidie
