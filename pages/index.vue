@@ -41,7 +41,15 @@ export default {
         description:
           "Chatbot sur Messenger, permet d'obtenir les horaires des prochains passages pour les bus et trams, en fonction de l'arrêt demandé.",
         mockup_url: "trambot_mockup.png",
-        url: "https://m.me/TramBot-942749432783368"
+        url: "https://m.me/TramBotBordeaux"
+      },
+       {
+        titre: "D&D app",
+        icon_url: "icon_dnd.png",
+        description:
+          "Application pour D&D 5E, permet de trouver rapidement un sort ou un object magique. Possibilité de faire une recherche filtrée.",
+        mockup_url: "dnd_mockup.png",
+        url: "https://dnd-app.netlify.app"
       }
     ]
   })
