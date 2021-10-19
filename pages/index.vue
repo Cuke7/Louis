@@ -28,6 +28,14 @@ export default {
         url: "https://auditere.netlify.app"
       },
       {
+        titre: "D&D app",
+        icon_url: "icon_dnd.png",
+        description:
+          "Application pour D&D 5E, permet de trouver rapidement un sort ou un object magique. Possibilité de faire une recherche filtrée.",
+        mockup_url: "dnd_mockup.png",
+        url: "https://dnd-app.netlify.app"
+      },
+      {
         titre: "7W",
         icon_url: "icon_7W.png",
         description:
@@ -43,13 +51,12 @@ export default {
         mockup_url: "trambot_mockup.png",
         url: "https://m.me/TramBotBordeaux"
       },
-       {
-        titre: "D&D app",
-        icon_url: "icon_dnd.png",
-        description:
-          "Application pour D&D 5E, permet de trouver rapidement un sort ou un object magique. Possibilité de faire une recherche filtrée.",
-        mockup_url: "dnd_mockup.png",
-        url: "https://dnd-app.netlify.app"
+      {
+        titre: "BBsit",
+        icon_url: "icon_bbsit.png",
+        description: "Permet de créer et partager des babysittings.",
+        mockup_url: "bbsit_mockup.png",
+        url: "https://bbsitapp.netlify.app"
       }
     ]
   })
