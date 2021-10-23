@@ -1,8 +1,15 @@
 <template>
   <div class="mt-12">
     <!-- <div class="text-h1 text-center my-12">Mes projets</div> -->
+    <div v-for="(app, index) in apps" :key="index">
+      <Apps :projectData="app" :index="index" class="my-12"></Apps>
+    </div>
     <div v-for="(project, index) in projects" :key="index">
-      <Project :projectData="project" :index="index" class="my-12"></Project>
+      <CodeProjects
+        :projectData="project"
+        :index="index"
+        class="my-12"
+      ></CodeProjects>
     </div>
   </div>
 </template>
@@ -10,7 +17,7 @@
 <script>
 export default {
   data: () => ({
-    projects: [
+    apps: [
       {
         titre: "Quotidie",
         icon_url: "icon_quotidie.png",
@@ -47,7 +54,7 @@ export default {
         titre: "Trambot",
         icon_url: "icon_trambot.png",
         description:
-          "Chatbot sur Messenger, permet d'obtenir les horaires des prochains passages pour les bus et trams, en fonction de l'arrêt demandé.",
+          "Chatbot sur Messenger, permet d'obtenir les horaires des prochains passages pour les bus et trams, en fonction de l'arrêt demandé. NE FONCTIONNE PLUS, à cause de la super politique de Facebook concernant les chatbots...",
         mockup_url: "trambot_mockup.png",
         url: "https://m.me/TramBotBordeaux"
       },
@@ -57,6 +64,20 @@ export default {
         description: "Permet de créer et partager des babysittings.",
         mockup_url: "bbsit_mockup.png",
         url: "https://bbsitapp.netlify.app"
+      }
+    ],
+    projects: [
+      {
+        titre: "Boids",
+        descriptionHtml:
+          "Simulation de vol d'un groupe d'oiseaux. Inspiré de <a style = 'color: white;' href='https://www.youtube.com/watch?v=bqtqltqcQhw' target='_blank'>https://www.youtube.com/watch?v=bqtqltqcQhw</a>. A consulter sur ordinateur pour conserver la mise en page.",
+        url: "https://cuke7.github.io/Boids/"
+      },
+      {
+        titre: "Conjecture de Collatz",
+        descriptionHtml:
+          "Illustration de la conjecture de Collatz, inspiré de <a style = 'color: white;' href='https://www.youtube.com/watch?v=094y1Z2wpJg' target='_blank'>https://www.youtube.com/watch?v=094y1Z2wpJg</a>. A consulter sur ordinateur pour conserver la mise en page.",
+        url: "https://cuke7.github.io/CollatzConjecture/"
       }
     ]
   })
