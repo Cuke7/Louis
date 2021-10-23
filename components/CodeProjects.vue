@@ -14,7 +14,7 @@
       <div class="text-md-left text-center">
         <v-btn
           color="primary"
-          class="mt-12"
+          class="mt-6"
           :href="projectData.url"
           target="_blank"
         >
